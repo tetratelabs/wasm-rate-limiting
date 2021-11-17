@@ -1,0 +1,11 @@
+apiVersion: extensions.istio.io/v1alpha1
+kind: WasmPlugin
+metadata:
+  name: httpbin-rate-limiting
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: httpbin
+  # TODO(incfly): replace this with an ghcr image once the artificats are available.
+  url: oci://ghcr.io/incfly/proxy-wasm-go-sdk:v1
