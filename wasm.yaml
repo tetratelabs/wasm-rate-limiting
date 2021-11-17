@@ -8,4 +8,4 @@ spec:
     matchLabels:
       app: httpbin
   # TODO(incfly): replace this with an ghcr image once the artificats are available.
-  url: oci://ghcr.io/incfly/proxy-wasm-go-sdk:v1
+  url: oci://ghcr.io/tetratelabs/wasm-rate-limiting:v1
